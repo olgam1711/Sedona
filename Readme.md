@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Olga Morozova](https://up.htmlacademy.ru/adaptive/16/user/699545).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлька Долгун](https://htmlacademy.ru/profile/id42333).
 
 ---
 
