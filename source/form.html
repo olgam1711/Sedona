@@ -56,19 +56,19 @@
 
           <h2 class="reviews__title">Представьтесь:</h2>
 
-          <p class="reviews-info__item">
-            <label for="feedback-name">Имя<sup>*</sup>:</label>
-            <input class="reviews-info__item-input" id="feedback-name" type="text" name="name" placeholder="Петр">
+          <p class="reviews-info__item input-general">
+            <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
+            <input class="input-general__item-input" id="feedback-name" type="text" name="name" placeholder="Петр">
           </p>
 
-          <p class="reviews-info__item">
-            <label for="feedback-lastname">Фамилия<sup>*</sup>:</label>
-            <input class="reviews-info__item-input" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
+          <p class="reviews-info__item input-general">
+            <label class="input-general__item-label" for="feedback-lastname">Фамилия<sup>*</sup>:</label>
+            <input class="input-general__item-input" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
           </p>
 
-          <p class="reviews-info__item">
-            <label for="feedback-patronymic">Отчество:</label>
-            <input class="reviews-info__item-input" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
+          <p class="reviews-info__item input-general">
+            <label class="input-general__item-label" for="feedback-patronymic">Отчество:</label>
+            <input class="input-general__item-input" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
           </p>
 
         </div>
@@ -77,16 +77,16 @@
 
           <h2 class="reviews__title">Контактная информация:</h2>
 
-          <p class="reviews-info__item">
-            <label for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="reviews-info__tel" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
-            <img src="phone.svg" width="10" height="10" alt="">
+          <p class="reviews-info__item input-general">
+            <label class="input-general__item-label" for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
+            <input class="input-general__item-input" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
+            <img class="input-general__icon" src="phone.svg" width="10" height="10" alt="">
           </p>
 
-          <p class="reviews-info__item">
-            <label for="feedback-mail">Электронная почта<sup>*</sup>:</label>
-            <input class="reviews-info__mail" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
-            <img src="email.svg" width="10" height="10" alt="">
+          <p class="reviews-info__item input-general">
+            <label class="input-general__item-label" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
+            <input class="input-general__item-input" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
+            <img class="input-general__icon" src="email.svg" width="10" height="10" alt="">
           </p>
 
         </div>
@@ -120,24 +120,24 @@
 
           <ul class="showplaces-list">
 
-            <li class="showplaces-list__item">
-              <input class="showplaces-list__item-input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
-              <label class="reviews-impression__item-checkbox" for="showplace-bridge">Мост дьявола</label>
+            <li class="showplaces-list__item checkbox-general">
+              <input class="checkbox-general__input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
+              <label class="checkbox-general__label" for="showplace-bridge">Мост дьявола</label>
             </li>
 
-            <li class="showplaces-list__item">
-              <input class="showplaces-list__item-input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
-              <label class="reviews-impression__item-checkbox" for="showplace-bell">Гора-колокол</label>
+            <li class="showplaces-list__item checkbox-general">
+              <input class="checkbox-general__input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
+              <label class="checkbox-general__label" for="showplace-bell">Гора-колокол</label>
             </li>
 
-            <li class="showplaces-list__item">
-              <input class="showplaces-list__item-input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
-              <label class="reviews-impression__item-checkbox" for="showplace-park">Слайд-парк</label>
+            <li class="showplaces-list__item checkbox-general">
+              <input class="checkbox-general__input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
+              <label class="checkbox-general__label" for="showplace-park">Слайд-парк</label>
             </li>
 
-            <li class="showplaces-list__item">
-              <input class="showplaces-list__item-input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
-              <label class="reviews-impression__item-checkbox" for="showplace-rocks">Красные скалы</label>
+            <li class="showplaces-list__item checkbox-general">
+              <input class="checkbox-general__input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
+              <label class="checkbox-general__label" for="showplace-rocks">Красные скалы</label>
             </li>
 
           </ul>
@@ -147,7 +147,7 @@
 
           <p class="feedback__text">
             <label class="reviews__title" for="feedback-textarea">Опишите свои эмоции:</label>
-            <textarea class="feedback__user-text" id="feedback-textarea" name="text" cols="44" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback__user-text" id="feedback-textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
 
         </div>
