@@ -12,3 +12,16 @@
   padding-bottom: 0;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .advantages-pics {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-top: 0;
+  }
+
+  .advantages-pics:first-child {
+    flex-direction: row;
+  }
+}
