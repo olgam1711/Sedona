@@ -2,225 +2,231 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Sedona: Форма отзыва</title>
   </head>
 
   <body>
-    <header class="page-header">
+    <div class="container">
+      <header class="page-header">
 
-      <nav class="header-nav">
+        <nav class="header-nav">
 
-        <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="22" viewBox="0 0 22.928 21.982">
-            <g>
-              <rect width="22.928" height="3.964"/>
-              <rect y="9.009" width="22.928" height="3.964"/>
-              <rect y="18.018" width="22.928" height="3.964"/>
-            </g>
-          </svg>
-        </button>
+          <div class="header-nav__wrapper">
+            <ul class="nav-list header-list">
 
-        <div class="header-nav__wrapper">
-          <ul class="nav-list header-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">Главная</a>
+              </li>
 
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="index.html">Главная</a>
-            </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="photo.html">Фото и видео</a>
+              </li>
 
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="photo.html">Фото и видео</a>
-            </li>
+              <li class="nav-list__item nav-list__item--active">
+                <a class="nav-list__link">Форма отзыва</a>
+              </li>
 
-            <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link">Форма отзыва</a>
-            </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="https://htmlacademy.ru/">Html academy</a>
+              </li>
+            </ul>
+          </div>
 
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="https://htmlacademy.ru/">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="22" viewBox="0 0 22.928 21.982">
+              <g>
+                <rect width="22.928" height="3.964"/>
+                <rect y="9.009" width="22.928" height="3.964"/>
+                <rect y="18.018" width="22.928" height="3.964"/>
+              </g>
+            </svg>
+          </button>
+        </nav>
 
-      <a class="page-header__logo">
-        <img class="page-header__nav-logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="логотип главного меню седоны">
-      </a>
+        <a class="page-header__logo">
+          <img class="page-header__nav-logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="логотип главного меню седоны">
+        </a>
 
-    </header>
+      </header>
 
-    <main class="page-main">
+      <main class="page-main">
 
-      <div class="main-slogan">
-
-        <img class="page-main__photo" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="фото с видами Седоны">
-        <img class="page-main__name" src="img/text-sedona.svg" alt="">
-
-      </div>
-
-      <section class="reviews">
-
-        <h2 class="reviews__title">Оставьте свой отзыв</h2>
-        <p class="reviews__text">Помогите нашим отелям стать лучше! Оставьте Ваш отзыв о них, а также о посещенных Вами достопримечательностях</p>
-
-        <div class="reviews__personal-info reviews-info">
-
-          <h2 class="reviews__title">Представьтесь:</h2>
-
-          <p class="reviews-info__item input-general">
-            <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
-            <input class="input-general__item-input" id="feedback-name" type="text" name="name" placeholder="Петр">
-          </p>
-
-          <p class="reviews-info__item input-general">
-            <label class="input-general__item-label" for="feedback-lastname">Фамилия<sup>*</sup>:</label>
-            <input class="input-general__item-input" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
-          </p>
-
-          <p class="reviews-info__item input-general">
-            <label class="input-general__item-label" for="feedback-patronymic">Отчество:</label>
-            <input class="input-general__item-input" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
-          </p>
+        <div class="main-slogan">
+          <img class="page-main__name" src="img/text-sedona.svg" alt="">
 
         </div>
 
-        <div class="reviews__contact-info reviews-info">
+        <section class="reviews">
 
-          <h2 class="reviews__title">Контактная информация:</h2>
+          <h2 class="reviews__title">Оставьте свой отзыв</h2>
+          <p class="reviews__text">Помогите нашим отелям стать лучше! Оставьте Ваш отзыв о них, а также о посещенных Вами достопримечательностях</p>
 
-          <p class="reviews-info__item input-general">
-            <label class="input-general__item-label" for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="input-general__item-input" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
-            <img class="input-general__icon" src="phone.svg" width="10" height="10" alt="">
-          </p>
+          <div class="reviews__personal-info reviews-info">
 
-          <p class="reviews-info__item input-general">
-            <label class="input-general__item-label" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
-            <input class="input-general__item-input" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
-            <img class="input-general__icon" src="email.svg" width="10" height="10" alt="">
-          </p>
+            <h2 class="reviews__title">Представьтесь:</h2>
 
-        </div>
+            <p class="reviews-info__item input-general">
+              <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
+              <input class="input-general__item-input" id="feedback-name" type="text" name="name" placeholder="Петр">
+            </p>
 
-        <div class="reviews__radio">
+            <p class="reviews-info__item input-general">
+              <label class="input-general__item-label" for="feedback-lastname">Фамилия<sup>*</sup>:</label>
+              <input class="input-general__item-input" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
+            </p>
 
-          <h2 class="reviews__title">Ваше общее впечатление:</h2>
+            <p class="reviews-info__item input-general">
+              <label class="input-general__item-label" for="feedback-patronymic">Отчество:</label>
+              <input class="input-general__item-input" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </p>
 
-          <ul class="reviews-impression">
+          </div>
 
-            <li class="reviews-impression__item">
-              <input class="reviews-impression__item-input visually-hidden" id="positive-point" type="radio" name="impression" value="positive" checked>
-              <label class="reviews-impression__item-label" for="positive-point">Скорее положительное</label>
-            </li>
+          <div class="reviews__contact-info reviews-info">
 
-            <li class="reviews-impression__item">
-              <input class="reviews-impression__item-input visually-hidden" id="negative-point" type="radio" name="impression" value="negative">
-              <label class="reviews-impression__item-label" for="negative-point">Скорее отрицательное</label>
-            </li>
+            <h2 class="reviews__title">Контактная информация:</h2>
 
-            <li class="reviews-impression__item">
-              <input class="reviews-impression__item-input visually-hidden" id="question-point" type="radio" name="impression" value="question">
-              <label class="reviews-impression__item-label" for="question-point">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </div>
+            <div class="reviews-info__section">
+              <p class="reviews-info__item input-general">
+              <label class="input-general__item-label" for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
+              <input class="input-general__item-input reviews-info__item-input" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
+              <img class="input-general__icon" src="phone.svg" width="10" height="10" alt="">
+              </p>
 
-        <div class="showplaces">
+              <p class="reviews-info__item input-general">
+                <label class="input-general__item-label" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
+                <input class="input-general__item-input reviews-info__item-input" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
+                <img class="input-general__icon" src="email.svg" width="10" height="10" alt="">
+              </p>
+            </div>
 
-          <h2 class="reviews__title">Посещенные достопримечательности:</h2>
+          </div>
 
-          <ul class="showplaces-list">
+          <div class="reviews__radio">
 
-            <li class="showplaces-list__item checkbox-general">
-              <input class="checkbox-general__input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
-              <label class="checkbox-general__label" for="showplace-bridge">Мост дьявола</label>
-            </li>
+            <h2 class="reviews__title">Ваше общее впечатление:</h2>
 
-            <li class="showplaces-list__item checkbox-general">
-              <input class="checkbox-general__input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
-              <label class="checkbox-general__label" for="showplace-bell">Гора-колокол</label>
-            </li>
+            <ul class="reviews-impression">
 
-            <li class="showplaces-list__item checkbox-general">
-              <input class="checkbox-general__input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
-              <label class="checkbox-general__label" for="showplace-park">Слайд-парк</label>
-            </li>
+              <li class="reviews-impression__item">
+                <input class="reviews-impression__item-input visually-hidden" id="positive-point" type="radio" name="impression" value="positive" checked>
+                <label class="reviews-impression__item-label" for="positive-point">Скорее положительное</label>
+              </li>
 
-            <li class="showplaces-list__item checkbox-general">
-              <input class="checkbox-general__input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
-              <label class="checkbox-general__label" for="showplace-rocks">Красные скалы</label>
-            </li>
+              <li class="reviews-impression__item">
+                <input class="reviews-impression__item-input visually-hidden" id="negative-point" type="radio" name="impression" value="negative">
+                <label class="reviews-impression__item-label" for="negative-point">Скорее отрицательное</label>
+              </li>
 
-          </ul>
-        </div>
+              <li class="reviews-impression__item">
+                <input class="reviews-impression__item-input visually-hidden" id="question-point" type="radio" name="impression" value="question">
+                <label class="reviews-impression__item-label" for="question-point">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </div>
 
-        <div class="reviews__textarea feedback">
+          <div class="showplaces">
 
-          <p class="feedback__text">
-            <label class="reviews__title" for="feedback-textarea">Опишите свои эмоции:</label>
-            <textarea class="feedback__user-text" id="feedback-textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-          </p>
+            <h2 class="reviews__title">Посещенные достопримечательности:</h2>
 
-        </div>
+            <ul class="showplaces-list">
 
-        <a class="reviews__write button" href="https://echo.htmlacademy.ru">Отправить отзыв</a>
+              <li class="showplaces-list__item checkbox-general">
+                <input class="checkbox-general__input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
+                <label class="checkbox-general__label" for="showplace-bridge">Мост дьявола</label>
+              </li>
 
-      </section>
+              <li class="showplaces-list__item checkbox-general">
+                <input class="checkbox-general__input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
+                <label class="checkbox-general__label" for="showplace-bell">Гора-колокол</label>
+              </li>
 
-    </main>
+              <li class="showplaces-list__item checkbox-general">
+                <input class="checkbox-general__input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
+                <label class="checkbox-general__label" for="showplace-park">Слайд-парк</label>
+              </li>
 
-    <footer class="page-footer">
+              <li class="showplaces-list__item checkbox-general">
+                <input class="checkbox-general__input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
+                <label class="checkbox-general__label" for="showplace-rocks">Красные скалы</label>
+              </li>
 
-      <div class="page-footer__wrapper">
+            </ul>
+          </div>
 
-        <div class="page-footer__social social">
+          <div class="reviews__textarea feedback">
 
-          <b class="social-title">#visitsedona</b>
+            <p class="feedback__text">
+              <label class="reviews__title" for="feedback-textarea">Опишите свои эмоции:</label>
+              <textarea class="feedback__user-text" id="feedback-textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            </p>
 
-          <ul class="social-list">
+          </div>
 
-            <li class="social-list__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/" area-label="Мы в твиттер">
-                <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="15" viewBox="0 0 17.5 14.663">
-                  <g id="W6EeEF_1_">
-                    <g>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          <a class="reviews__write button" href="https://echo.htmlacademy.ru">Отправить отзыв</a>
+
+        </section>
+
+      </main>
+
+      <footer class="page-footer">
+
+        <div class="page-footer__wrapper">
+
+          <div class="page-footer__social social">
+
+            <b class="social-title">#visitsedona</b>
+
+            <ul class="social-list">
+
+              <li class="social-list__item">
+                <a class="social__link social__link--twitter" href="https://twitter.com/" area-label="Мы в твиттер">
+                  <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="15" viewBox="0 0 17.5 14.663">
+                    <g id="W6EeEF_1_">
+                      <g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                      </g>
                     </g>
-                  </g>
-                </svg>
-              </a>
-            </li>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/" area-label="Мы в фэйсбук">
-                <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 8.672 18.944">
-                  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-                </svg>
-              </a>
-            </li>
+              <li class="social-list__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/" area-label="Мы в фэйсбук">
+                  <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 8.672 18.944">
+                    <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/" area-label="Мы в ютьюб">
-                <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="14" viewBox="0 0 19.979 14.015">
-                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-                </svg>
-              </a>
-            </li>
+              <li class="social-list__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/" area-label="Мы в ютьюб">
+                  <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="14" viewBox="0 0 19.979 14.015">
+                  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                  </svg>
+                </a>
+              </li>
 
-          </ul>
+            </ul>
+
+          </div>
+
+          <div class="page-footer__developer developer">
+
+            <p class="developer__text">Разработано</p>
+
+            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="ссылка на Html academy"></a>
+          </div>
 
         </div>
 
-        <div class="page-footer__developer developer">
+      </footer>
 
-          <p class="developer__text">Разработано</p>
-
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="ссылка на Html academy"></a>
-        </div>
-
-      </div>
-
-    </footer>
+    </div>
 
   </body>
 </html>
