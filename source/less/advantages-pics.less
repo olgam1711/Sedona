@@ -10,7 +10,24 @@
 .advantages-pics__photo {
   display: block;
   padding-bottom: 0;
-  width: 100%;
+}
+
+.advantages-pics__photo-one {
+  width: 320px;
+  height: 263px;
+
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-pics__photo-two {
+  width: 320px;
+  height: 263px;
+
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: 768px) {
@@ -23,5 +40,37 @@
 
   .advantages-pics:first-child {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages-pics__photo-one {
+    width: 512px;
+    height: 255px;
+
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
+
+  .advantages-pics__photo-two {
+    width: 512px;
+    height: 255px;
+
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-pics__photo-one {
+    width: 800px;
+    height: 260px;
+
+    background-image: url("../img/main-city-desktop@1x.jpg");
+  }
+
+  .advantages-pics__photo-two {
+    width: 800px;
+    height: 260px;
+
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
   }
 }
