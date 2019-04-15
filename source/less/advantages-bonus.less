@@ -26,6 +26,12 @@
   fill: #81b3d2;
 }
 
+@media (max-width: 1199px) {
+  .advantages-bonus__br {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .advantages-bonus {
     display: flex;
@@ -67,5 +73,25 @@
 
   .advantages-bonus__item--gift {
     order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-bonus {
+    width: 1200px;
+    justify-content: space-around;
+    margin-bottom: 67px;
+  }
+
+  .advantages-bonus__item-desc {
+    width: 304px;
+  }
+
+  .advantages-bonus__svg {
+    margin-left: 161px;
+  }
+
+  .advantages-bonus__br {
+    display: initial;
   }
 }
