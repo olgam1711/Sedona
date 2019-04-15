@@ -50,6 +50,10 @@
   background-image: url("../img/main-bridge-mobile@1x.jpg");
 }
 
+.advantages-pics__br {
+    display: none;
+  }
+
 @media (min-width: 768px) {
   .advantages-pics {
     display: flex;
@@ -58,22 +62,52 @@
     padding-top: 0;
   }
 
+  .advantages-pics__title {
+    margin-top: 0;
+  }
+
+  .advantages-pics__text {
+    width: 166px;
+    padding-bottom: 0;
+    margin-right: auto;
+  }
+
   .advantages-pics:first-child {
     flex-direction: row;
   }
 
-  .advantages-pics__photo--one {
+  .advantages-pics__text--one {
+    margin-left: 45px;
+  }
+
+  .advantages-pics__text--two {
+    margin-top: 34px;
+  }
+
+  .advantages-pics__photo {
     width: 512px;
     height: 255px;
+  }
+
+  .advantages-pics__photo--one {
+    margin-left: auto;
 
     background-image: url("../img/main-city-tablet@1x.jpg");
   }
 
   .advantages-pics__photo--two {
-    width: 512px;
-    height: 255px;
+    margin-right: auto;
 
     background-image: url("../img/main-bridge-tablet@1x.jpg");
+  }
+
+  .advantages-pics__description {
+    width: 166px;
+    margin-top: 23px;
+  }
+
+  .advantages-pics__br {
+    display: initial;
   }
 }
 
