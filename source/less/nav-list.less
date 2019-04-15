@@ -5,16 +5,34 @@
   list-style: none;
 }
 
+.nav-list__item--active {
+  position: relative;
+}
+
+.nav-list__svg {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  fill: #ffffff;
+}
+
 .nav-list__item {
   font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
 
   background-color: #81b3d2;
-  border-bottom: 3px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.nav-list__item:last-child {
+  border: none;
 }
 
 .nav-list__link {
   display: block;
-  padding: 21px 22px;
+  padding: 8px 22px;
 
   color: #ffffff;
   text-decoration: none;
