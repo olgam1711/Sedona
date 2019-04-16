@@ -1,0 +1,61 @@
+.video {
+  position: relative;
+}
+
+.video__photo {
+  position: relative;
+
+  width: 320px;
+  height: 201px;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.video__scale {
+  position: absolute;
+  bottom: 68px;
+  left: 21px;
+
+  width: 235px;
+  padding: 22px;
+
+  background-color: #322823;
+  opacity: 0.8;
+}
+
+.video__bar {
+  height: 2px;
+
+  background-color: #725a4d;
+}
+
+.video__toggle {
+  position: absolute;
+  top: 19px;
+  left: 57px;
+  padding: 0;
+
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .video__photo {
+    width: 648px;
+    height: 499px;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .video__photo {
+    width: 800px;
+    height: 500px;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+}
