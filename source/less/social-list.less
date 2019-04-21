@@ -1,11 +1,26 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 
-  width: 151px;
   padding: 0;
   margin: 0;
 
   list-style: none;
+}
+
+.social-list__item {
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 36px;
+}
+
+.social-list__item:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .social-list {
+    justify-content: space-between;
+  }
 }
