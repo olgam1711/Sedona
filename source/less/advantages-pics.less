@@ -59,21 +59,31 @@
 @media (min-width: 768px) {
   .advantages-pics {
     display: flex;
-    flex-direction: row-reverse;
 
     padding-top: 0;
   }
 
+  .advantages-pics--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .advantages-pics__title {
+    font-size: 21px;
+  }
+
+  .advantages-pics__number {
+    margin-bottom: 20px;
+  }
+
   .advantages-pics__text {
+    padding-top: 30px;
+    padding-left: 24px;
+    padding-right: 25px;
     padding-bottom: 0;
   }
 
-  .advantages-pics:first-child {
-    flex-direction: row;
-  }
-
   .advantages-pics__photo {
-    width: 512px;
+    min-width: 512px;
     height: 255px;
   }
 
