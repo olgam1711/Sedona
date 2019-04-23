@@ -5,8 +5,10 @@
 .video__photo {
   position: relative;
 
-  width: 320px;
-  height: 201px;
+  display: block;
+
+  min-width: 320px;
+  min-height: 201px;
 
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -46,30 +48,27 @@
   .video {
     position: relative;
 
-    width: 648px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .video__photo {
     position: relative;
 
-    width: 648px;
-    height: 499px;
-
-    background-image: url("../img/video-tablet@1x.jpg");
+    width: 100%;
+    min-height: 499px;
   }
 
   .video__icons {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 60px;
   }
 
   .video__scale {
     position: absolute;
-    bottom: 22px;
-    left: 70px;
+    bottom: 23px;
+    left: 130px;
 
     width: 391px;
 
@@ -91,13 +90,24 @@
 @media (min-width: 1200px) {
   .video {
     width: 800px;
-    margin-bottom: 123px;
+    margin-bottom: 119px;
+    padding-left: 200px;
   }
 
   .video__photo {
-    width: 800px;
-    height: 500px;
+    min-width: 800px;
+    min-height: 500px;
+  }
 
-    background-image: url("../img/video-desktop@1x.jpg");
+  .video__icons {
+    left: 200px;
+
+    bottom: 5px;
+  }
+
+  .video__scale {
+    left: 270px;
+    bottom: 26px;
+    width: 539px;
   }
 }

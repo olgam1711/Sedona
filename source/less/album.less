@@ -1,17 +1,14 @@
 .album {
-  margin-left: 20px;
-  margin-right: auto;
-  padding-left: 0;
+  padding-left: 20px;
   padding-bottom: 0;
-  width: 648px;
 
   list-style: none;
 }
 
 .album__item {
-  width: 280px;
+  padding-right: 20px;
   padding-top: 23px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   border-top: 2px solid #e5e5e5;
 }
@@ -25,6 +22,8 @@
     margin-left: auto;
     margin-top: 68px;
     margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .album__item {
@@ -41,12 +40,14 @@
 
 @media (min-width: 1200px) {
   .album {
-    width: 1200px;
+    width: 100%;
+    padding: 0;
     margin-right: 0;
     margin-left: 0;
   }
 
   .album__item {
+    position: relative;
     width: 400px;
   }
 }
