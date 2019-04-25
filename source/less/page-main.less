@@ -1,20 +1,63 @@
-.page-main {
-  margin-top: -27px;
-}
-
 .page-main__name {
   width: 280px;
   margin-left: 25px;
   margin-top: 50px;
 }
 
+.page-main__name-index {
+  margin-top: 91px;
+  height: 211px;
+}
+
+.page-main__name--compact {
+  width: 224px;
+  margin-left: 0;
+}
+
 .page-main__title-photo {
   margin-top: 38px;
-  margin-bottom: 38px;
+  margin-bottom: 29px;
 
   font-size: 18px;
 }
 
 .page-main__text {
-  margin-bottom: 33px;
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-main__name-index {
+    margin-top: 80px;
+    height: 346px;
+  }
+
+  .page-main__name--compact {
+    width: 454px;
+    margin-top: 94px;
+  }
+
+  .page-main__title-photo {
+    margin-top: 77px;
+    margin-bottom: 34px;
+    font-size: 30px;
+  }
+
+  .page-main__text {
+    width: 443px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__name--compact {
+    margin-top: 100px;
+  }
+
+  .page-main__title-photo {
+    margin-top: 115px;
+  }
 }

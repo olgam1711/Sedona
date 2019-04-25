@@ -1,14 +1,34 @@
 .developer {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+}
+
+.developer__text {
+  padding-right: 8px;
+
+  font-size: 14px;
 }
 
 .developer__link {
   display: block;
-  width: 27px;
-  height: 34px;
+  width: 39px;
+  height: 49px;
+}
 
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.developer__svg {
+  width: 39px;
+  height: 49px;
+
+  fill: #000000;
+}
+
+@media (min-width: 768px) {
+  .developer {
+    margin-top: 0;
+  }
+
+  .developer__text {
+    margin-top: 10px;
+  }
 }

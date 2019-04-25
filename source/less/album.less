@@ -1,16 +1,14 @@
 .album {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
+  padding-left: 20px;
   padding-bottom: 0;
-  width: 648px;
 
   list-style: none;
 }
 
 .album__item {
+  padding-right: 20px;
   padding-top: 23px;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
 
   border-top: 2px solid #e5e5e5;
 }
@@ -19,10 +17,20 @@
   .album {
     display: flex;
     flex-wrap: wrap;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 68px;
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .album__item {
     width: 50%;
+    padding: 0;
+
+    border: none;
   }
 
   .album__item:first-child {
@@ -31,7 +39,15 @@
 }
 
 @media (min-width: 1200px) {
+  .album {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .album__item {
-    width: 33%;
+    position: relative;
+    width: 33.33%;
   }
 }

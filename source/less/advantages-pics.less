@@ -1,27 +1,141 @@
 .advantages-pics {
   padding-left: 0;
-  margin-top: 40px;
-  padding-top: 32px;
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
+.advantages-pics__title {
+  margin-bottom: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages-pics__number {
+  margin-top: 8px;
+}
+
+.advantages-pics__text {
+  padding-top: 11px;
+  padding-bottom: 26px;
+}
+
+.advantages-pics__text--one {
+  padding-top: 62px;
+}
+
+.advantages-pics__text--two {
+  padding-top: 25px;
+}
+
 .advantages-pics__photo {
   display: block;
   padding-bottom: 0;
-  width: 100%;
+  min-width: 320px;
+  height: 260px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-pics__photo--one {
+  background: url("../img/main-city-mobile@1x.jpg");
+}
+
+.advantages-pics__photo--two {
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+}
+
+.advantages-pics__description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages-pics__br {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .advantages-pics {
     display: flex;
-    flex-direction: row-reverse;
 
     padding-top: 0;
   }
 
-  .advantages-pics:first-child {
-    flex-direction: row;
+  .advantages-pics--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .advantages-pics__title {
+    font-size: 21px;
+  }
+
+  .advantages-pics__number {
+    margin-bottom: 20px;
+  }
+
+  .advantages-pics__text {
+    padding-top: 30px;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-bottom: 0;
+  }
+
+  .advantages-pics__photo {
+    min-width: 512px;
+    height: 255px;
+  }
+
+  .advantages-pics__photo--one {
+    margin-left: auto;
+
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
+
+  .advantages-pics__photo--two {
+    margin-right: auto;
+
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+  }
+
+  .advantages-pics__br {
+    display: initial;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-pics__title {
+    margin-right: 92px;
+    margin-left: 92px;
+
+    font-size: 21px;
+  }
+
+  .advantages-pics__text {
+    padding-top: 36px;
+  }
+
+  .advantages-pics__description {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .advantages-pics__description--two {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .advantages-pics__photo {
+    min-width: 800px;
+    height: 257px;
+  }
+
+  .advantages-pics__photo--one {
+    background-image: url("../img/main-city-desktop@1x.jpg");
+  }
+
+  .advantages-pics__photo--two {
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
   }
 }
