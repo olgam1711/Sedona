@@ -69,7 +69,11 @@
 
           <li class="album__item photo-card">
 
-            <img class="photo-card__img photo-card__img--one" src="img/photo-sunset-mobile@1x.jpg">
+            <picture class="photo-card__img photo-card__img--one">
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+              <img src="img/photo-sunset-mobile@1x.jpg" alt="фото заката">
+            </picture>
 
             <div class="photo-card__sign photo-card__sign--one">
               <div>
@@ -95,7 +99,11 @@
 
           <li class="album__item photo-card">
 
-            <img class="photo-card__img photo-card__img--two" src="img/photo-cactus-mobile@1x.jpg">
+            <picture class="photo-card__img photo-card__img--two">
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+              <img src="img/photo-cactus-mobile@1x.jpg" alt="фото кактуса">
+            </picture>
 
             <div class="photo-card__sign">
               <div>
@@ -120,7 +128,13 @@
           </li>
 
           <li class="album__item photo-card">
-            <img class="photo-card__img photo-card__img--three" src="img/photo-roads-mobile@1x.jpg">
+
+            <picture class="photo-card__img photo-card__img--three">
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+              <img src="img/photo-roads-mobile@1x.jpg" alt="фото дороги">
+            </picture>
+
             <div class="photo-card__sign">
               <div>
                 <h3 class="photo-card__title">Дорога на север</h3>
@@ -144,7 +158,13 @@
           </li>
 
           <li class="album__item photo-card">
-            <img class="photo-card__img photo-card__img--four" src="img/photo-bridge-mobile@1x.jpg">
+
+            <picture class="photo-card__img photo-card__img--four">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+              <img src="img/photo-bridge-mobile@1x.jpg" alt="фото моста">
+            </picture>
+
             <div class="photo-card__sign">
               <div>
                 <h3 class="photo-card__title">Мост дьявола</h3>
@@ -179,7 +199,11 @@
 
           <div class="video">
 
-            <img class="video__photo" src="img/video-mobile@1x.jpg">
+            <picture class="video__photo">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img src="img/video-mobile@1x.jpg">
+            </picture>
 
             <div class="video__scale">
               <div class="video__bar"></div>
