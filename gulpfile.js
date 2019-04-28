@@ -70,27 +70,27 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("clean", function () {
- return del("build");
+  return del("build");
 });
 
 gulp.task("copy", function () {
- return gulp.src([
- "source/fonts/**/*.{woff,woff2}",
- "source/img/**",
- "source/js/**",
- "source/*.ico"
- ], {
- base: "source"
- })
-  .pipe(gulp.dest("build"));
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series(
- "clean",
- "copy",
- "css",
- "sprite",
- "html"
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html"
 ));
 
 gulp.task("server", function () {
