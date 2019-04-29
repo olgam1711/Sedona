@@ -1,3 +1,40 @@
+.checkbox-general {
+  position: relative;
+}
+
+.checkbox-general__input + label::before {
+  position: relative;
+  content: "";
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.checkbox-general__input:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  fill: #333333;
+}
+
+.checkbox-general__input + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox-general__input:checked + label:hover::before {
+  fill: #333333;
+}
+
+.checkbox-general__input + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.checkbox-general__input:checked + label:active::before {
+  fill: #a4a4a4;
+}
+
 .checkbox-general__label {
   text-transform: none;
 }
