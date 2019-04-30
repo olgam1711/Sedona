@@ -1,5 +1,45 @@
 .reviews-impression {
+  position: relative;
+
   list-style: none;
+}
+
+.reviews-impression__item-input + label::before {
+  position: relative;
+  content: "";
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-color: #f2f2f2;
+  border: 10px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.reviews-impression__item-input:checked + label::before {
+  background-color: #333333;
+  border: 10px solid #f2f2f2;
+}
+
+.reviews-impression__item-input + label:hover::before {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.reviews-impression__item-input:checked + label:hover::before {
+  background-color: #333333;
+  border: 10px solid #e5e5e5;
+}
+
+.reviews-impression__item-input + label:active::before {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
+.reviews-impression__item-input:checked + label:active::before {
+  background-color: #a4a4a4;
+  border: 10px solid #d5d5d5;
 }
 
 .reviews-impression__item-label {

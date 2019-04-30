@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>Sedona: Фото и видео</title>
   </head>
 
   <body>
+    <div style="display:none">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
 
       <nav class="header-nav">
@@ -26,7 +30,7 @@
             </li>
 
             <li class="nav-list__item nav-list__item--active nav-list__item--left-photo">
-              <a class="nav-list__link">Фото и видео</a>
+              <a class="nav-list__link nav-list__link--active">Фото и видео</a>
             </li>
 
             <li class="nav-list__item nav-list__item--right-form">
