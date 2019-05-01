@@ -1,5 +1,6 @@
 .reviews {
   margin-top: 38px;
+  margin-bottom: 75px;
 
   font-weight: bold;
 }
@@ -36,6 +37,10 @@
   margin-top: 22px;
 }
 
+.reviews__send-p {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .reviews {
     display: flex;
@@ -46,24 +51,62 @@
     order: 1;
 
     width: 100%;
+
+    font-size: 21px;
+  }
+
+  .reviews__title--main {
+    margin-top: 39px;
+
+    font-size: 31px;
+  }
+
+  .reviews__title--name {
+    margin-bottom: 54px;
+    margin-left: 65px;
+
+    text-align: left;
+  }
+
+  .reviews__title--impression {
+    margin-left: 62px;
+
+    text-align: left;
+  }
+
+  .reviews__title--visit {
+    width: 50%;
+    margin-top: 24px;
+    padding-left: 192px;
+
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .reviews__text {
     order: 2;
 
-    width: 100%;
+    margin-top: 34px;
+    margin-bottom: 36px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    border: none;
   }
 
   .reviews__radio {
     order: 3;
 
-    width: 50%;
+    width: 47%;
+    padding-right: 20px;
+
+    border-bottom: none;
   }
 
   .reviews__personal-info {
     order: 4;
 
-    width: 50%;
+    width: 47%;
   }
 
   .reviews__contact-info {
@@ -84,7 +127,61 @@
     width: 100%;
   }
 
-  .reviews__write {
+  .reviews__send {
     order: 8;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    margin-top: 7px;
+    margin-left: 60px;
+    width: 84%;
+
+    align-items: center;
+  }
+
+  .reviews__send-p {
+    display: contents;
+
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__title--main {
+    margin-top: 78px;
+  }
+
+  .reviews__title--impression {
+    margin-left: 141px;
+  }
+
+  .reviews__title--visit {
+    width: 30%;
+    margin-top: 29px;
+    padding-left: 419px;
+
+    font-size: 21px;
+  }
+
+  .reviews__text {
+    padding-left: 365px;
+    padding-right: 365px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__radio {
+    padding-right: 0;
+    margin-left: 63px;
+  }
+
+  .reviews__impression {
+    padding-left: 94px;
+  }
+
+  .reviews__send {
+    margin-bottom: 27px;
+    margin-left: 121px;
+    width: 80%;
   }
 }

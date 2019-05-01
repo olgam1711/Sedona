@@ -75,12 +75,12 @@
 
         <section class="reviews">
 
-          <h2 class="reviews__title">Оставьте свой отзыв</h2>
+          <h2 class="reviews__title reviews__title--main">Оставьте свой отзыв</h2>
           <p class="reviews__text">Помогите нашим отелям стать лучше! Оставьте Ваш отзыв о них, а также о посещенных Вами достопримечательностях</p>
 
           <div class="reviews__personal-info reviews-info">
 
-            <h2 class="reviews__title">Представьтесь:</h2>
+            <h2 class="reviews__title reviews__title--name">Представьтесь:</h2>
 
             <p class="reviews-info__item input-general input-general--personal">
               <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
@@ -110,10 +110,10 @@
               <img class="input-general__icon" src="../img/icon-phone.svg" width="17" height="17" alt="">
               </p>
 
-              <p class="reviews-info__item input-general">
-                <label class="input-general__item-label input-general__item-label--contact" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
+              <p class="reviews-info__item reviews-info__item--mail input-general">
+                <label class="input-general__item-label input-general__item-label--contact input-general__item-label--mail" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
                 <input class="input-general__item-input reviews-info__item-input input-general__item-input--mail" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
-                <img class="input-general__icon" src="../img/icon-mail.svg" width="17" height="17" alt="">
+                <img class="input-general__icon input-general__icon--right" src="../img/icon-mail.svg" width="17" height="17" alt="">
               </p>
             </div>
 
@@ -121,7 +121,7 @@
 
           <div class="reviews__radio">
 
-            <h2 class="reviews__title">Ваше общее впечатление:</h2>
+            <h2 class="reviews__title reviews__title--impression">Ваше общее впечатление:</h2>
 
             <ul class="reviews-impression">
 
@@ -144,7 +144,7 @@
 
           <div class="reviews__showplaces showplaces">
 
-            <h2 class="reviews__title">Посещенные достопримечательности:</h2>
+            <h2 class="reviews__title reviews__title--visit">Посещенные достопримечательности:</h2>
 
             <ul class="showplaces-list">
 
@@ -180,7 +180,10 @@
 
           </div>
 
-          <a class="reviews__write button" href="https://echo.htmlacademy.ru">Отправить отзыв</a>
+          <div class="reviews__send">
+            <a class="reviews__write button button--send" href="https://echo.htmlacademy.ru">Отправить отзыв</a>
+            <p class="reviews__send-p">* - обязательные поля</p>
+          </div>
 
         </section>
 

@@ -2,11 +2,26 @@
   border-bottom: 1px solid #f2f2f2;
 }
 
+.reviews-info__section {
+  padding-bottom: 8px;
+}
+
 .reviews-info__item-input {
   margin-top: 12px;
 }
 
+.reviews-info__item--mail {
+  margin-top: 0;
+}
+
 @media (min-width: 768px) {
+  .reviews-info {
+    border-bottom: none;
+    padding-bottom: 0;
+
+    border-left: 1px solid #f2f2f2;
+  }
+
   .reviews-info__item-input {
     width: 100%;
   }
@@ -15,7 +30,9 @@
 @media (min-width: 1200px) {
   .reviews-info__section {
     display: flex;
-    justify-content: space-between;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .reviews-info__item {

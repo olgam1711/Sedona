@@ -1,12 +1,16 @@
 .reviews-impression {
   position: relative;
 
+  margin-top: 21px;
+
   list-style: none;
 }
 
 .reviews-impression__item-input + label::before {
   position: relative;
   content: "";
+
+  left: -23px;
 
   display: block;
   width: 20px;
@@ -43,6 +47,22 @@
 }
 
 .reviews-impression__item-label {
-  font-size: 17px;
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 10px;
+
+  font-size: 18px;
   text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .reviews-impression {
+  margin-top: 56px;
+  padding-left: 80px;
+  }
+
+  .reviews-impression__item {
+    margin-bottom: 10px;
+  }
 }

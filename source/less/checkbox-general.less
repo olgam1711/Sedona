@@ -5,12 +5,17 @@
 .checkbox-general__input + label::before {
   position: relative;
   content: "";
+  left: -15px;
 
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 13px;
+  margin-right: 5px;
 
   background-color: #f2f2f2;
+  background-position: center;
+  border-radius: 15%;
 }
 
 .checkbox-general__input:checked + label::before {
@@ -36,5 +41,15 @@
 }
 
 .checkbox-general__label {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
   text-transform: none;
+}
+
+@media (min-width: 1200px) {
+  .checkbox-general__input+label::before {
+    left: -17px;
+  }
 }
