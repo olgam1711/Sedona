@@ -1,23 +1,27 @@
 .input-general {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 11px;
+  position: relative;
 
   width: 280px;
 }
 
 .input-general--personal {
   display: flex;
+  justify-content: flex-end;
+
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input-general__item-input {
+  margin-left: 20px;
   height: 60px;
   padding: 0;
-  padding-left: 22px;
-  padding-right: 70px;
+  padding-right: 74px;
+  padding-left: 20px;
 
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   color: #000000;
 
   background-color: #f2f2f2;
@@ -38,7 +42,36 @@
 }
 
 .input-general__item-label {
-  margin-top: 25px;
+  margin-top: 22px;
 
   font-weight: 200;
+}
+
+.input-general__item-label--contact {
+  display: flex;
+  margin-left: 40px;
+}
+
+
+.input-general__item-input--tel {
+  position: relative;
+
+  margin-top: 10px;
+}
+
+.input-general__item-input--mail {
+  position: relative;
+}
+
+.input-general__icon {
+  content: "";
+
+  position: absolute;
+  right: -20px;
+  top: 31px;
+  padding: 21px;
+
+  display: block;
+
+  background-color: #d2d2d2;
 }
