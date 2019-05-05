@@ -15,9 +15,23 @@
 
 .header-nav__toggle {
   margin: 16px 13px 13px auto;
+  min-height: 29px;
+
 
   border: none;
   background-color: #ffffff;
+}
+
+.header-nav--closed .header-nav__wrapper {
+  display: none;
+}
+
+.header-nav--nojs .header-nav__svg {
+  display: none;
+}
+
+.header-nav--nojs .nav-list__svg {
+  display: none;
 }
 
 @media (min-width: 768px) {
