@@ -31,7 +31,7 @@
 
 .video__toggle {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 57px;
   padding: 0;
 
@@ -44,8 +44,7 @@
   .video {
     position: relative;
 
-    padding-left: 60px;
-    padding-right: 60px;
+    margin: 0 auto;
   }
 
   .video__photo {
@@ -58,13 +57,11 @@
   .video__icons {
     position: absolute;
     bottom: 0;
-    left: 60px;
   }
 
   .video__scale {
     position: absolute;
     bottom: 28px;
-    left: 130px;
 
     width: 391px;
 
@@ -86,22 +83,18 @@
 @media (min-width: 1200px) {
   .video {
     width: 800px;
-    margin-bottom: 116px;
-    padding-left: 200px;
   }
 
   .video__photo {
     min-width: 800px;
+    max-width: 100%;
     min-height: 500px;
   }
 
-  .video__icons {
-    left: 200px;
-  }
-
   .video__scale {
-    left: 270px;
     bottom: 29px;
+    left: 60px;
+
     width: 541px;
   }
 }

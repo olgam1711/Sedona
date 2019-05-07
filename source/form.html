@@ -72,121 +72,123 @@
       <main class="page-main">
 
         <div class="main-slogan main-slogan--compact">
-          <img class="page-main__name page-main__name--compact" src="img/text-sedona.svg" width="224" alt="">
+          <img class="page-main__name page-main__name--compact" src="img/text-sedona.svg" width="224" height="100" alt="Седона">
 
         </div>
 
         <section class="reviews">
 
-          <h2 class="reviews__title reviews__title--main">Оставьте свой отзыв</h2>
+          <h1 class="reviews__title reviews__title--main">Оставьте свой отзыв</h1>
           <p class="reviews__text">Помогите нашим отелям стать лучше! Оставьте Ваш отзыв о них, а также о посещенных Вами достопримечательностях</p>
 
-          <div class="reviews__personal-info reviews-info">
+          <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <h2 class="reviews__title reviews__title--name">Представьтесь:</h2>
+            <div class="reviews__personal-info reviews-info">
+              <h2 class="reviews__title reviews__title--name">Представьтесь:</h2>
 
-            <p class="reviews-info__item input-general input-general--personal">
-              <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
-              <input class="input-general__item-input" id="feedback-name" type="text" name="name" placeholder="Петр">
-            </p>
-
-            <p class="reviews-info__item input-general input-general--personal">
-              <label class="input-general__item-label" for="feedback-lastname">Фамилия<sup>*</sup>:</label>
-              <input class="input-general__item-input" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
-            </p>
-
-            <p class="reviews-info__item input-general input-general--personal">
-              <label class="input-general__item-label" for="feedback-patronymic">Отчество:</label>
-              <input class="input-general__item-input" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
-            </p>
-
-          </div>
-
-          <div class="reviews__contact-info reviews-info">
-
-            <h2 class="reviews__title">Контактная информация:</h2>
-
-            <div class="reviews-info__section">
-              <p class="reviews-info__item input-general">
-              <label class="input-general__item-label input-general__item-label--contact" for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
-              <input class="input-general__item-input reviews-info__item-input input-general__item-input--tel" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
-              <img class="input-general__icon" src="../img/icon-phone.svg" width="17" height="17" alt="">
+              <p class="reviews-info__item input-general input-general--personal">
+                <label class="input-general__item-label" for="feedback-name">Имя<sup>*</sup>:</label>
+                <input class="input-general__item-input input-general__item-input--name" id="feedback-name" type="text" name="name" placeholder="Петр">
               </p>
 
-              <p class="reviews-info__item reviews-info__item--mail input-general">
-                <label class="input-general__item-label input-general__item-label--contact input-general__item-label--mail" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
-                <input class="input-general__item-input reviews-info__item-input input-general__item-input--mail" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
-                <img class="input-general__icon input-general__icon--right" src="../img/icon-mail.svg" width="17" height="17" alt="">
+              <p class="reviews-info__item input-general input-general--personal">
+                <label class="input-general__item-label" for="feedback-lastname">Фамилия<sup>*</sup>:</label>
+                <input class="input-general__item-input input-general__item-input--name" id="feedback-lastname" type="text" name="last-name" placeholder="Иванов">
               </p>
+
+              <p class="reviews-info__item input-general input-general--personal">
+                <label class="input-general__item-label" for="feedback-patronymic">Отчество:</label>
+                <input class="input-general__item-input input-general__item-input--name" id="feedback-patronymic" type="text" name="patronymic" placeholder="Александрович">
+              </p>
+
             </div>
 
-          </div>
+            <div class="reviews__contact-info reviews-info">
 
-          <div class="reviews__radio">
+              <h2 class="reviews__title">Контактная информация:</h2>
 
-            <h2 class="reviews__title reviews__title--impression">Ваше общее впечатление:</h2>
+              <div class="reviews-info__section">
+                <p class="reviews-info__item input-general">
+                <label class="input-general__item-label input-general__item-label--contact" for="feedback-tel">Контактный телефон<sup>*</sup>:</label>
+                <input class="input-general__item-input reviews-info__item-input input-general__item-input--tel" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон">
+                <img class="input-general__icon" src="../img/icon-phone.svg" width="17" height="17" alt="">
+                </p>
 
-            <ul class="reviews-impression">
+                <p class="reviews-info__item reviews-info__item--mail input-general">
+                  <label class="input-general__item-label input-general__item-label--contact input-general__item-label--mail" for="feedback-mail">Электронная почта<sup>*</sup>:</label>
+                  <input class="input-general__item-input reviews-info__item-input input-general__item-input--mail" id="feedback-mail" type="email" name="email" placeholder="Введите e-mail">
+                  <img class="input-general__icon input-general__icon--right" src="../img/icon-mail.svg" width="17" height="17" alt="">
+                </p>
+              </div>
 
-              <li class="reviews-impression__item">
-                <input class="reviews-impression__item-input visually-hidden" id="positive-point" type="radio" name="impression" value="positive" checked>
-                <label class="reviews-impression__item-label" for="positive-point">Скорее положительное</label>
-              </li>
+            </div>
 
-              <li class="reviews-impression__item">
-                <input class="reviews-impression__item-input visually-hidden" id="negative-point" type="radio" name="impression" value="negative">
-                <label class="reviews-impression__item-label" for="negative-point">Скорее отрицательное</label>
-              </li>
+            <div class="reviews__radio">
 
-              <li class="reviews-impression__item">
-                <input class="reviews-impression__item-input visually-hidden" id="question-point" type="radio" name="impression" value="question">
-                <label class="reviews-impression__item-label" for="question-point">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </div>
+              <h2 class="reviews__title reviews__title--impression">Ваше общее впечатление:</h2>
 
-          <div class="reviews__showplaces showplaces">
+              <ul class="reviews-impression">
 
-            <h2 class="reviews__title reviews__title--visit">Посещенные достопримечательности:</h2>
+                <li class="reviews-impression__item">
+                  <input class="reviews-impression__item-input visually-hidden" id="positive-point" type="radio" name="impression" value="positive" checked>
+                  <label class="reviews-impression__item-label" for="positive-point">Скорее положительное</label>
+                </li>
 
-            <ul class="showplaces-list">
+                <li class="reviews-impression__item">
+                  <input class="reviews-impression__item-input visually-hidden" id="negative-point" type="radio" name="impression" value="negative">
+                  <label class="reviews-impression__item-label" for="negative-point">Скорее отрицательное</label>
+                </li>
 
-              <li class="showplaces-list__item checkbox-general">
-                <input class="checkbox-general__input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
-                <label class="checkbox-general__label" for="showplace-bridge">Мост дьявола</label>
-              </li>
+                <li class="reviews-impression__item">
+                  <input class="reviews-impression__item-input visually-hidden" id="question-point" type="radio" name="impression" value="question">
+                  <label class="reviews-impression__item-label" for="question-point">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </div>
 
-              <li class="showplaces-list__item checkbox-general">
-                <input class="checkbox-general__input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
-                <label class="checkbox-general__label" for="showplace-bell">Гора-колокол</label>
-              </li>
+            <div class="reviews__showplaces showplaces">
 
-              <li class="showplaces-list__item checkbox-general">
-                <input class="checkbox-general__input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
-                <label class="checkbox-general__label" for="showplace-park">Слайд-парк</label>
-              </li>
+              <h2 class="reviews__title reviews__title--visit">Посещенные достопримечательности:</h2>
 
-              <li class="showplaces-list__item checkbox-general">
-                <input class="checkbox-general__input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
-                <label class="checkbox-general__label" for="showplace-rocks">Красные скалы</label>
-              </li>
+              <ul class="showplaces-list">
 
-            </ul>
-          </div>
+                <li class="showplaces-list__item checkbox-general">
+                  <input class="checkbox-general__input visually-hidden" id="showplace-bridge" type="checkbox" name="devil-bridge" checked>
+                  <label class="checkbox-general__label" for="showplace-bridge">Мост дьявола</label>
+                </li>
 
-          <div class="reviews__textarea feedback">
+                <li class="showplaces-list__item checkbox-general">
+                  <input class="checkbox-general__input visually-hidden" id="showplace-bell" type="checkbox" name="bell-mountain" checked>
+                  <label class="checkbox-general__label" for="showplace-bell">Гора-колокол</label>
+                </li>
 
-            <p class="feedback__text">
-              <label class="reviews__title" for="feedback-textarea">Опишите свои эмоции:</label>
-              <textarea class="feedback__user-text" id="feedback-textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-            </p>
+                <li class="showplaces-list__item checkbox-general">
+                  <input class="checkbox-general__input visually-hidden" id="showplace-park" type="checkbox" name="slide-park" checked>
+                  <label class="checkbox-general__label" for="showplace-park">Слайд-парк</label>
+                </li>
 
-          </div>
+                <li class="showplaces-list__item checkbox-general">
+                  <input class="checkbox-general__input visually-hidden" id="showplace-rocks" type="checkbox" name="red-rocks">
+                  <label class="checkbox-general__label" for="showplace-rocks">Красные скалы</label>
+                </li>
 
-          <div class="reviews__send">
-            <a class="reviews__write button button--send" href="https://echo.htmlacademy.ru">Отправить отзыв</a>
-            <p class="reviews__send-p">* - обязательные поля</p>
-          </div>
+              </ul>
+            </div>
+
+            <div class="reviews__textarea feedback">
+
+              <p class="feedback__text">
+                <label class="reviews__title" for="feedback-textarea">Опишите свои эмоции:</label>
+                <textarea class="feedback__user-text" id="feedback-textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+              </p>
+
+            </div>
+
+            <div class="reviews__send">
+              <button type="submit" class="reviews__write button button--send">Отправить отзыв</button>
+              <p class="reviews__send-p">* - обязательные поля</p>
+            </div>
+          </form>
 
         </section>
 
