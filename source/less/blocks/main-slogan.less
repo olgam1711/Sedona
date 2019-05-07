@@ -1,0 +1,67 @@
+.main-slogan {
+  min-width: 320px;
+  min-height: 392px;
+
+  background: url("../../img/bg-intro-triangle-mobile.svg") 0 366px no-repeat, url("../../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background-color: #9ad1ec;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../../img/bg-intro-triangle-mobile.svg") 0 366px no-repeat, url("../../img/bg-back-mobile@2x.jpg") 0 0 no-repeat;
+  }
+}
+
+.main-slogan--compact {
+  min-height: 161px;
+
+  background: url("../../img/bg-intro-triangle-mobile.svg") 0 135px no-repeat, url("../../img/bg-back-mobile@1x.jpg") 0 bottom no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../../img/bg-intro-triangle-mobile.svg") 0 135px no-repeat, url("../../img/bg-back-mobile@2x.jpg") 0 bottom no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-slogan {
+    min-width: 768px;
+    min-height: 521px;
+
+    background: url("../../img/bg-intro-triangle-tablet.svg") 0 462px no-repeat, url("../../img/bg-back-tablet@1x.jpg") 0 0 no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../img/bg-intro-triangle-tablet.svg") 0 464px no-repeat, url("../../img/bg-back-tablet@2x.jpg") 0 0 no-repeat;
+    }
+  }
+
+  .main-slogan--compact {
+    min-height: 292px;
+
+    background: url("../../img/bg-intro-triangle-tablet.svg") 0 235px no-repeat, url("../../img/bg-back-tablet@1x.jpg") 0 bottom no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../img/bg-intro-triangle-tablet.svg") 0 235px no-repeat, url("../../img/bg-back-tablet@2x.jpg") 0 bottom no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-slogan {
+    min-width: 1200px;
+    min-height: 521px;
+
+    background: url("../../img/bg-intro-triangle-desktop.svg") 0 462px no-repeat, url("../../img/bg-back-desktop@1x.jpg") 0 0 no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../img/bg-intro-triangle-desktop.svg") 0 464px no-repeat, url("../../img/bg-back-desktop@2x.jpg") 0 0 no-repeat;
+    }
+  }
+
+  .main-slogan--compact {
+    min-height: 302px;
+
+    background: url("../../img/bg-intro-triangle-desktop.svg") 0 245px no-repeat, url("../../img/bg-back-desktop@1x.jpg") 0 bottom no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../img/bg-intro-triangle-desktop.svg") 0 245px no-repeat, url("../../img/bg-back-desktop@2x.jpg") 0 bottom no-repeat;
+    }
+  }
+}
