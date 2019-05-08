@@ -49,7 +49,7 @@
 
 .input-general__item-label--contact {
   display: flex;
-  justify-content: center;
+  padding-left: 22px;
 }
 
 .input-general__item-label--mail {
@@ -76,6 +76,10 @@
 }
 
 @media (min-width: 768px) {
+  .input-general {
+    margin-top: 18px;
+  }
+
   .input-general--personal {
     margin-bottom: 0;
     margin-left: 64px;
@@ -84,25 +88,31 @@
   }
 
   .input-general__item-input {
-    padding-left: 10px;
+    padding-left: 20px;
+  }
+
+  .input-general__item-span {
+    width: 647px;
+    margin: 0 auto;
   }
 
   .input-general__item-label--contact {
     margin-left: 79px;
+    padding-left: 0;
+  }
+
+  .input-general__item-label {
+    margin-top: 0;
   }
 
   .input-general__item-label--mail {
     padding-left: 0;
+    margin-top: 20px;
   }
 
   .input-general__item-input--tel,
   .input-general__item-input--mail {
-    width: 624px;
-  }
-
-  .input-general__icon {
-    left: 647px;
-    top: 32px;
+    width: 100%;
   }
 }
 
@@ -112,13 +122,8 @@
     margin-top: 19px;
   }
 
-  .input-general__icon {
-    left: 459px;
-    top: 13px;
-  }
-
   .input-general--personal {
-    margin-left: 54px;
+    margin-left: 80px;
     width: 70%;
     max-width: 700px;
   }
@@ -134,21 +139,13 @@
   .input-general__item-label--mail {
     margin-left: 80px;
     margin-top: 10px;
+    margin-right: 12px;
     min-width: 151px;
 
     align-items: center;
   }
 
   .input-general__item-input {
-    padding-left: 17px;
-  }
-
-  .input-general__item-input--mail {
-    margin-left: 16px;
-  }
-
-  .input-general__icon--right {
-    left: 505px;
-    top: 11px;
+    padding-left: 24px;
   }
 }

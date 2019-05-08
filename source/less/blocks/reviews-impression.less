@@ -2,6 +2,7 @@
   position: relative;
 
   margin-top: 21px;
+  padding-left: 18px;
 
   list-style: none;
 }
@@ -62,10 +63,25 @@
 @media (min-width: 768px) {
   .reviews-impression {
     margin-top: 56px;
-    padding-left: 80px;
+    padding-left: 55px;
   }
 
   .reviews-impression__item {
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews-impression {
+    margin-top: 60px;
+    padding-left: 123px;
+  }
+
+  .reviews-impression__item {
+    margin-bottom: 8px;
+  }
+
+  .reviews-impression__item-input + label::before {
+    margin-right: 16px;
   }
 }
