@@ -96,7 +96,7 @@ gulp.task("build", gulp.series(
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "dist/",
     notify: false,
     open: true,
     cors: true,
